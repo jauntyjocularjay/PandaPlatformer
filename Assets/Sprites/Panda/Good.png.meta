@@ -1,0 +1,2380 @@
+fileFormatVersion: 2
+guid: 39232290e64c2eb4cb5ebc2d606d2140
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Good_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 429
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b782711615afa9a489026d7e5acaf092
+      internalID: -937969261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_1
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 429
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba3f162e4557ab4684868f7a023aff6
+      internalID: 1847725599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_2
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 429
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52647c6df5c66444da594b4c2392db94
+      internalID: 1436418237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_3
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 429
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb54c748ac293746addb8ba15b6a80d
+      internalID: 728587836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_4
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 429
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb70a5d999e0f5249ab8dfad4be0c224
+      internalID: 1016667835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_5
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 429
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09b34f4bcf78e54289689490bf7d575
+      internalID: -971906994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_6
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 429
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6011ebf8f4b054cb306ff76a0ec47c
+      internalID: -697480229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_7
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 429
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ef721a675b16b4fa2c775b35a15340
+      internalID: -108792375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_8
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 429
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a2d3c1bc53f5c1489bf0ee134d7eaeb
+      internalID: 1350450345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 396
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8d472d9ae3f3042a702a4467d65464
+      internalID: 958005018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_10
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 396
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31b8662c2cc4fd46899d0728d5f48e8
+      internalID: -139841463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_11
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 396
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009a0956aa0a98e429f078ccf45083f7
+      internalID: -80539585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_12
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 396
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2102a5a389ac5be4983bc3652da6f471
+      internalID: -1910487243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_13
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 396
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c784cad9183b7428a8196dcfccf9dc
+      internalID: -997552023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_14
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 396
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 003163cbdb45166418b2b62ea33b2c66
+      internalID: -292833918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_15
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 396
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592a210db221928419091846da6fc356
+      internalID: -1599205590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_16
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 396
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f560393f53c32b44aa3ece2c06f38a6
+      internalID: -2028989505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 363
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e164c79278e24a64187799c7090fded6
+      internalID: 1299942924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_18
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 363
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cba35fb64087f6409467133c234d41c
+      internalID: 604117994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_19
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 363
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3fbd91ac51cb6147a23cff78f2534b8
+      internalID: -2123558452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_20
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 363
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c076a7fc76f8c4f94f2a9574985e52
+      internalID: 407329833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 330
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381a2fa270823cb43af6ea22f2b8c892
+      internalID: 1046532488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_22
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 330
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c63a0460fd47cae4db157b094cc677aa
+      internalID: 31112438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_23
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 330
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b30e0fd27fdf2945818b79332877f05
+      internalID: 931513382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_24
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 330
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fcc8971537ee6f40949449544e2f935
+      internalID: -1111980976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 297
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a8258d5ea69cf45ab6e344117563c3
+      internalID: -115375140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_26
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 297
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3940eb9cb5db5624691db9420244e4ab
+      internalID: 1002397186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_27
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 297
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac66366d0912410439439f3f88a63c36
+      internalID: -1763706387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_28
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 297
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbea609c41071514dbf39edc9f17ab85
+      internalID: 819047507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 264
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13790b495ba41141b0b8615e6b5baab
+      internalID: 219974579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_30
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 264
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae4d09c0cdbd9145b0dc73951aa1d41
+      internalID: 535455694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_31
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 264
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4cd213bca03a424e9130e6d2c81bc34
+      internalID: 846107050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_32
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 264
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81690338007a2d94c860c5cdd4816aec
+      internalID: 1850926601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 231
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eeea446de590044094ab5f529960677
+      internalID: 1149953817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_34
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 231
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da09b73cafe17ab4b9e1b293e4c17282
+      internalID: 211047378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_35
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 231
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38352259787cea544a9f2ccfc4e1f798
+      internalID: 2044318456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_36
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 231
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad01867a0e9bb2448f00d5e8a94bb67
+      internalID: 912492998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 198
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f4cd2b6518818439199f1d27256dcf
+      internalID: -1354539725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_38
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 198
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374511c25c292e046a96574067e3503d
+      internalID: -641601238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_39
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 198
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4ede5bab998164e8d550ee2da52f01
+      internalID: -1281880250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_40
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 198
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b128fd7072a3e4db247d927aa2d16f
+      internalID: -166342407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_41
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 198
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b70e61fb3388a84da39a1b89020cb66
+      internalID: 904859982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_42
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 198
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af12705a87c5b940b902dc4d33a04d8
+      internalID: -1197623319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_43
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 198
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6c53b29afe02f4883d3b507c7cbc85
+      internalID: -1939392550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_44
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 198
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf490272c053fc9449825a2bf9d47084
+      internalID: 2127851448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_45
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 198
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a9c67b88476f64096c9111826fae6b
+      internalID: -57945543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_46
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 198
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca0114e3eee710469dba0370800debe
+      internalID: 338467008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 165
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e22f483b910620c49ba826b85eb31c2b
+      internalID: 1849379095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_48
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 165
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856a461ba2a75bb47bb308d253118fe9
+      internalID: 1634075212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_49
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 165
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3853fbc52d3177b43837785f9712d10b
+      internalID: -1894541133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_50
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 165
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f7383079fc4f74183864483987839b
+      internalID: 1131430885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 132
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192a2967e6688414a9757deea9105d67
+      internalID: -1252101197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_52
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 132
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09eab88be563f64aacda164f5b89e12
+      internalID: 1419776172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_53
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 132
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b08aa5e79dceb4d88a6ae11525a471
+      internalID: -1929969619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_54
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 132
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f1ac3a61c28bb43be941f60c9b1f51
+      internalID: 83413469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_55
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 132
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1fce8259a937e849b76d5e58049a09b
+      internalID: -1211080038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_56
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 132
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70dafed0af1707498eb5cbdab45c9f3
+      internalID: 1757691581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_57
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 132
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d5e509b2d6ce84d8745907caae7ae4
+      internalID: 1475374525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_58
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 132
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9ae5af78b91f74abea2baf6a5997df
+      internalID: 1300142865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_59
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 132
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc15081dffd29b458ddf8cbe1c931dd
+      internalID: -766081270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_60
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 132
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638f563418633dc44816a7799fa9dc6b
+      internalID: 1888718514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 99
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c70c45590d55894da8b858e26fb326e
+      internalID: -1749799198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_62
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 99
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0ff38b80ecb0e43a40555ada741db2
+      internalID: -681369996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_63
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 99
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644c05f7b9e23e64380d16c566a5d74f
+      internalID: -1692568692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_64
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 99
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e779ce2bb498c4b942aa0200964bba
+      internalID: -217626298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_65
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 99
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3502cc56b0d0085468252393b4e9c225
+      internalID: -156226615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_66
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 99
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d18df9211813b4ead28cfc7b880f26
+      internalID: -186067709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_67
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 99
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136f4b5018f445646b48b9a2ff94afae
+      internalID: 106515533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_68
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 99
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e698da5593f218488f71654892ba5d7
+      internalID: 1088621360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_69
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 99
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8712d167307711458a9aa597fe428e7
+      internalID: -475266091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 66
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5c9f1f6817ac14fa31afbf29d46cd5
+      internalID: -431162756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_71
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 66
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd3b1c5aefb259448b43a596a6034bf
+      internalID: 1774916093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_72
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 66
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cad87aee6d3e7542b9baca36f076c98
+      internalID: -1165118995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_73
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 66
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e783b930a78be4fa3e7ea52310776a
+      internalID: -82159549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_74
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 66
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86455d1046b34b04caf883ca6eda3c19
+      internalID: -1284239946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_75
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 66
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12a2be7aa0de3148aaa0cdb7060db7c
+      internalID: -1581406845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_76
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 33
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d40a3c8f4481a46bd280aec23d5e15
+      internalID: -926449238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_77
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 33
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9cbc76427f87b4e93b9e1b0661327c
+      internalID: -2142679778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_78
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 33
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6d8b859b6f4b94280f41700f5029df
+      internalID: -1976720730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_79
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 33
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f6d6d3e6cc0c044b50494eb1039efb
+      internalID: 1880945226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_80
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 33
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6c1bf4ec9249647965e343a9bf0b21
+      internalID: -1783080626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_81
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 33
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f8009666fac484f9d9edd10455932a
+      internalID: 1600720062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_82
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 33
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d262a96e19fc8b4a8c73bf5e0008e89
+      internalID: 1966060726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_83
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 33
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53def0701f26b6f46b5fe2a8bafb5491
+      internalID: -581875115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_84
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 33
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8104f57bda468f844836e7a4653eb386
+      internalID: -1815514809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_85
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 33
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e03ef76471c1f40a6a0f8695f21271
+      internalID: -320361770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_86
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 33
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ec27f12d7f9ab4f9e9ce99e5479609
+      internalID: 1547200958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_87
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 33
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e2d4bc10a1bf04f9120f3551abd5ce
+      internalID: -1027459609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_88
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 33
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6f7d5f1b40eba48be8c8de22a231ab
+      internalID: -10835258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_89
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 33
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e931a30ec7c546e439ede9487a6381b8
+      internalID: 1961813514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_90
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 33
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb67559765c2b5a4e882463e9d62d47c
+      internalID: -53010374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_91
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 33
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae7ade9881daa2f43a4791238a0beafe
+      internalID: 665214453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_92
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 33
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4987e72a4c55145b322cc266237ffa
+      internalID: -944041968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_93
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a121b6f377610b1409767576c5879c9b
+      internalID: -1577873439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_94
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 0
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e25b5059cd68c49af35ceaf3fe638c
+      internalID: 1581217970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_95
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 0
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611a5095c31370841bb003cb7319b0c3
+      internalID: 2132475704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_96
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 0
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c983496b60c8845b6a01d75ce1f400
+      internalID: -206699044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_97
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 0
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc6163bb861f6f49aa9499d843fb3a7
+      internalID: 1662694990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_98
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 0
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e101e4759706cee4e91ce4edb7577699
+      internalID: 717490930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_99
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 0
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a3ce3c1f13607040b2063f0e3683ba4
+      internalID: 1531348577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_100
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 0
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4c9aefe5e03da4a8a32a6abcd85b29
+      internalID: -734676036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_101
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 0
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d8aab7456c03342bc32a747084ee94
+      internalID: 1390959770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good_102
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 0
+        width: 103
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f843630de3dbb4e818f2b5b9596ab9
+      internalID: -1443914706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Good_0: -937969261
+      Good_1: 1847725599
+      Good_10: -139841463
+      Good_100: -734676036
+      Good_101: 1390959770
+      Good_102: -1443914706
+      Good_11: -80539585
+      Good_12: -1910487243
+      Good_13: -997552023
+      Good_14: -292833918
+      Good_15: -1599205590
+      Good_16: -2028989505
+      Good_17: 1299942924
+      Good_18: 604117994
+      Good_19: -2123558452
+      Good_2: 1436418237
+      Good_20: 407329833
+      Good_21: 1046532488
+      Good_22: 31112438
+      Good_23: 931513382
+      Good_24: -1111980976
+      Good_25: -115375140
+      Good_26: 1002397186
+      Good_27: -1763706387
+      Good_28: 819047507
+      Good_29: 219974579
+      Good_3: 728587836
+      Good_30: 535455694
+      Good_31: 846107050
+      Good_32: 1850926601
+      Good_33: 1149953817
+      Good_34: 211047378
+      Good_35: 2044318456
+      Good_36: 912492998
+      Good_37: -1354539725
+      Good_38: -641601238
+      Good_39: -1281880250
+      Good_4: 1016667835
+      Good_40: -166342407
+      Good_41: 904859982
+      Good_42: -1197623319
+      Good_43: -1939392550
+      Good_44: 2127851448
+      Good_45: -57945543
+      Good_46: 338467008
+      Good_47: 1849379095
+      Good_48: 1634075212
+      Good_49: -1894541133
+      Good_5: -971906994
+      Good_50: 1131430885
+      Good_51: -1252101197
+      Good_52: 1419776172
+      Good_53: -1929969619
+      Good_54: 83413469
+      Good_55: -1211080038
+      Good_56: 1757691581
+      Good_57: 1475374525
+      Good_58: 1300142865
+      Good_59: -766081270
+      Good_6: -697480229
+      Good_60: 1888718514
+      Good_61: -1749799198
+      Good_62: -681369996
+      Good_63: -1692568692
+      Good_64: -217626298
+      Good_65: -156226615
+      Good_66: -186067709
+      Good_67: 106515533
+      Good_68: 1088621360
+      Good_69: -475266091
+      Good_7: -108792375
+      Good_70: -431162756
+      Good_71: 1774916093
+      Good_72: -1165118995
+      Good_73: -82159549
+      Good_74: -1284239946
+      Good_75: -1581406845
+      Good_76: -926449238
+      Good_77: -2142679778
+      Good_78: -1976720730
+      Good_79: 1880945226
+      Good_8: 1350450345
+      Good_80: -1783080626
+      Good_81: 1600720062
+      Good_82: 1966060726
+      Good_83: -581875115
+      Good_84: -1815514809
+      Good_85: -320361770
+      Good_86: 1547200958
+      Good_87: -1027459609
+      Good_88: -10835258
+      Good_89: 1961813514
+      Good_9: 958005018
+      Good_90: -53010374
+      Good_91: 665214453
+      Good_92: -944041968
+      Good_93: -1577873439
+      Good_94: 1581217970
+      Good_95: 2132475704
+      Good_96: -206699044
+      Good_97: 1662694990
+      Good_98: 717490930
+      Good_99: 1531348577
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
