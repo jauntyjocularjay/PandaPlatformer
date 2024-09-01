@@ -1,26 +1,20 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Animations;
 
 public class PlayerCharacter : MonoBehaviour
 {
-    public int horizontal = 0;
-    public int vertical = 0;
-    public bool airbourne = false;
-    // Start is called before the first frame update
+    public float horizontalAxis = 0f;
+    public float verticalAxis = 0f;
+    public bool isAirbourne = false;
+    public Rigidbody2D rig;
+
     void Start()
     {
-        
+        GetRigidBody();
     }
-
-    // Update is called once per frame
-    void FixedUpdate()
+    public void GetRigidBody()
     {
-        
+        rig = gameObject.GetComponent<Rigidbody2D>();
     }
-
     public bool Up()
     {
         return
@@ -69,10 +63,17 @@ public class PlayerCharacter : MonoBehaviour
             // Input.GetButtonDown("Fire2") ||
             Input.GetKeyDown(KeyCode.G);
     }
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(Vector2.Dot(collision.GetContact(0).normal, Vector2.up) < 0.1f)
+        {
+            isAirbourne = true;
+        }
+        else
+        {
+            isAirbourne = false;
+        }
+    }
 }
 
-public interface IPlayerCharacter
-{
-    void Start(){}
-    void Action(){}
-}
+

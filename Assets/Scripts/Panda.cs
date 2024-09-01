@@ -8,7 +8,6 @@ public class Panda : PlayerCharacter
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -27,7 +26,7 @@ public class Panda : PlayerCharacter
         {
 
         }
-        else if(airbourne && LeftPress())
+        else if(isAirbourne && LeftPress())
         {
 
         }
@@ -35,7 +34,7 @@ public class Panda : PlayerCharacter
         {
 
         }
-        else if(airbourne && RightPress())
+        else if(isAirbourne && RightPress())
         {
 
         }
@@ -43,15 +42,15 @@ public class Panda : PlayerCharacter
         {
 
         }
-        else if(airbourne && DownPress() && PrimaryAttackPress())
+        else if(isAirbourne && DownPress() && PrimaryAttackPress())
         {
 
         }
-        else if(airbourne && PrimaryAttackPress())
+        else if(isAirbourne && PrimaryAttackPress())
         {
 
         }
-        else if(airbourne && SecondaryAttackPress())
+        else if(isAirbourne && SecondaryAttackPress())
         {
 
         }

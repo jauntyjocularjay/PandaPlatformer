@@ -122,6 +122,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &543509319 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 740850096301338932, guid: 7e5a59aed0b96e54ba15ba5f8c2fe28b, type: 3}
+  m_PrefabInstance: {fileID: 9099256801725517549}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &835112185
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,7 +217,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 543509319}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &835112189
@@ -326,7 +332,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 835112188}
     m_Modifications:
     - target: {fileID: 740850096301338932, guid: 7e5a59aed0b96e54ba15ba5f8c2fe28b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -334,11 +340,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 740850096301338932, guid: 7e5a59aed0b96e54ba15ba5f8c2fe28b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.9
       objectReference: {fileID: 0}
     - target: {fileID: 740850096301338932, guid: 7e5a59aed0b96e54ba15ba5f8c2fe28b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 740850096301338932, guid: 7e5a59aed0b96e54ba15ba5f8c2fe28b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -386,5 +392,4 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 835112188}
-  - {fileID: 9099256801725517549}
   - {fileID: 2996009929921022795}
