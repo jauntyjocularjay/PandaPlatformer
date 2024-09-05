@@ -32,44 +32,18 @@ public class Panda : PlayerCharacter
     public void Movement()
     {
         float moveInput = Input.GetAxisRaw("Horizontal");
-        panda.runtimeAnimatorController.vertical = moveInput;
-        SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 
-        if(moveInput > 0)
+        if(rig.velocity.x < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else if(rig.velocity.x > 0)
         {
             spriteRenderer.flipX = false;
         }
-        else if (moveInput < 0)
-        {
-            spriteRenderer.flipY = true;
-        }
 
         
-        if(PrimaryAttackPress() && !isAirbourne)
-        {
-            panda.SetTrigger("PrimaryAttack");
-        }
-        else if(isAirbourne && DownPress() && PrimaryAttackPress())
-        {
-
-        }
-        else if(DownPress() && PrimaryAttackPress())
-        {
-
-        }
-        else if(DownPress() && SecondaryAttackPress())
-        {
-
-        }
-        else if(SecondaryAttackPress())
-        {
-            panda.SetTrigger("SecondaryAttack");
-        }
-        else if(DownPress())
-        {
-
-        }
-        else if(JumpPress())
+        if(JumpPress() && !isAirbourne)
         {
             isAirbourne = true;
             rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
@@ -77,27 +51,43 @@ public class Panda : PlayerCharacter
         else if(LeftPress() && !isAirbourne)
         {
             rig.velocity = new Vector2(moveInput * moveSpeed, rig.velocity.y);
-            if(rig.velocity.x < 0)
-            {
-                spriteRenderer.flipX = true;
-            }
-            else if(rig.velocity.x > 0)
-            {
-                spriteRenderer.flipX = false;
-            }
         }
         else if(RightPress() && !isAirbourne)
         {
             rig.velocity = new Vector2(moveInput * moveSpeed, rig.velocity.y);
-            if(rig.velocity.x < 0)
-            {
-                spriteRenderer.flipX = true;
-            }
-            else if(rig.velocity.x > 0)
-            {
-                spriteRenderer.flipX = false;
-            }
         }
+        else if(PrimaryAttackPress() && !isAirbourne)
+        {
+            panda.SetTrigger("PrimaryAttack");
+        }
+/*
+        else if(isAirbourne && DownPress() && PrimaryAttackPress())
+        {
+
+        }
+*/
+/*
+        else if(DownPress() && PrimaryAttackPress())
+        {
+
+        }
+*/
+/*
+        else if(DownPress() && SecondaryAttackPress())
+        {
+
+        }
+*/
+        else if(SecondaryAttackPress())
+        {
+            panda.SetTrigger("SecondaryAttack");
+        }
+/*
+        else if(DownPress())
+        {
+
+        }
+*/
         else if(isAirbourne && PrimaryAttackPress())
         {
 

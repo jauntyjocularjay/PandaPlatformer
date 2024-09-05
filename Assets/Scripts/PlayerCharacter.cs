@@ -10,10 +10,12 @@ public class PlayerCharacter : MonoBehaviour
     public float moveSpeed = 1.0f;
     public float jumpForce = 5.0f;
     public AnimatorController animator;
+    public SpriteRenderer spriteRenderer;
 
     void Start()
     {
         GetRigidBody();
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
     public void GetRigidBody()
     {

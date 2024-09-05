@@ -265,6 +265,11 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!212 &941924863 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2035807189990574123, guid: 7e5a59aed0b96e54ba15ba5f8c2fe28b, type: 3}
+  m_PrefabInstance: {fileID: 9099256801725517549}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2996009929921022795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -374,10 +379,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2035807189990574123, guid: 7e5a59aed0b96e54ba15ba5f8c2fe28b, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3937174256159560843, guid: 7e5a59aed0b96e54ba15ba5f8c2fe28b, type: 3}
       propertyPath: m_Name
       value: Panda
       objectReference: {fileID: 0}
+    - target: {fileID: 4562950807214423223, guid: 7e5a59aed0b96e54ba15ba5f8c2fe28b, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 941924863}
     - target: {fileID: 6810539881192524027, guid: 7e5a59aed0b96e54ba15ba5f8c2fe28b, type: 3}
       propertyPath: m_Controller
       value: 
