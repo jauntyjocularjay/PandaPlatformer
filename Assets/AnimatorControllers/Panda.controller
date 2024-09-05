@@ -8,7 +8,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: fall_
-  m_Speed: 0.2
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 4437204534055993105}
@@ -163,22 +163,16 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 4
-    m_ConditionEvent: vertical
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: airbourne
-    m_EventTreshold: 0
+  m_Conditions: []
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -8293260040013429232}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.015145503
   m_TransitionOffset: 0
-  m_ExitTime: 0
+  m_ExitTime: 0.000000002614497
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -193,13 +187,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: jump
-    m_EventTreshold: 0
-  - m_ConditionMode: 3
-    m_ConditionEvent: vertical
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: airbourne
+    m_ConditionEvent: isAirbourne
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3832744094318237199}
@@ -302,14 +290,11 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 4
-    m_ConditionEvent: vertical
-    m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: DownPress
     m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: airbourne
+    m_ConditionEvent: isAirbourne
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4376725642207791804}
@@ -383,10 +368,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 7
-    m_ConditionEvent: horizontal
+    m_ConditionEvent: horizontalVelocity
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: airbourne
+    m_ConditionEvent: isAirbourne
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7129831003560522257}
@@ -507,19 +492,13 @@ AnimatorController:
   m_Name: Panda
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: horizontal
+  - m_Name: horizontalVelocity
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: vertical
-    m_Type: 3
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: airbourne
+  - m_Name: isAirbourne
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -644,7 +623,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: airbourne
+    m_ConditionEvent: isAirbourne
     m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: UpPress
@@ -675,10 +654,10 @@ AnimatorStateTransition:
     m_ConditionEvent: jump
     m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: airbourne
+    m_ConditionEvent: isAirbourne
     m_EventTreshold: 0
   - m_ConditionMode: 7
-    m_ConditionEvent: horizontal
+    m_ConditionEvent: horizontalVelocity
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3832744094318237199}
@@ -751,7 +730,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: jump_
-  m_Speed: 0.2
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -6758928909275482096}
@@ -808,11 +787,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 6
-    m_ConditionEvent: horizontal
-    m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: airbourne
+    m_ConditionEvent: isAirbourne
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8638944686320443020}
@@ -823,7 +799,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0
-  m_HasExitTime: 1
+  m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -1054,7 +1030,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: idle_
-  m_Speed: 0.2
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -6698829982107008661}
@@ -1162,10 +1138,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 7
-    m_ConditionEvent: horizontal
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: airbourne
+    m_ConditionEvent: horizontalVelocity
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7129831003560522257}

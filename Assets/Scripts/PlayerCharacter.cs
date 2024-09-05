@@ -1,25 +1,45 @@
+using Unity.VisualScripting;
 using UnityEditor.Animations;
 using UnityEngine;
 
 public class PlayerCharacter : MonoBehaviour
 {
     public float horizontalAxis = 0f;
-    public float verticalAxis = 0f;
     public bool isAirbourne = false;
-    public Rigidbody2D rig;
-    public float moveSpeed = 1.0f;
-    public float jumpForce = 5.0f;
-    public AnimatorController animator;
-    public SpriteRenderer spriteRenderer;
+    public float moveSpeed = 5.0f;
+    public float jumpForce = 8.0f;
+    public Rigidbody2D rig2d;
+    public AnimatorController animatorController;
+    public Animator animator;
+    public SpriteRenderer sr;
 
-    void Start()
+    public void Start()
     {
         GetRigidBody();
-        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+    }
+
+    void Update()
+    {
+        horizontalAxis = Input.GetAxis("Horizontal");
+
+        if(JumpPress() && !animator.GetBool("isAirbourne"))
+        {
+            animator.SetBool("isAirbourne", true);
+            rig2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        }
+        else if(RightPress() && !animator.GetBool("isAirbourne"))
+        {
+            rig2d.velocity = new Vector2(horizontalAxis * moveSpeed, rig2d.velocity.y);
+        }
+        else if(LeftPress() && !animator.GetBool("isAirbourne"))
+        {
+            rig2d.velocity = new Vector2(horizontalAxis * moveSpeed, rig2d.velocity.y);
+        }
+
     }
     public void GetRigidBody()
     {
-        rig = gameObject.GetComponent<Rigidbody2D>();
+        rig2d = gameObject.GetComponent<Rigidbody2D>();
     }
     public bool Up()
     {
@@ -56,7 +76,7 @@ public class PlayerCharacter : MonoBehaviour
         return
             // Input.GetButton("Jump") ||
             Input.GetKeyDown(KeyCode.Space) &&
-            !isAirbourne;
+            !animator.GetBool("isAirbourne");
     }
     public bool PrimaryAttackPress()
     {
@@ -80,7 +100,7 @@ public class PlayerCharacter : MonoBehaviour
     {
         if(Vector2.Dot(collision.GetContact(0).normal, Vector2.up) > 0.8f)
         {
-            isAirbourne = false;
+            animator.SetBool("isAirbourne", false);
         }
     }
 }
