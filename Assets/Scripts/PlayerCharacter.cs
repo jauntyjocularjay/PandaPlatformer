@@ -1,3 +1,4 @@
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class PlayerCharacter : MonoBehaviour
@@ -6,6 +7,9 @@ public class PlayerCharacter : MonoBehaviour
     public float verticalAxis = 0f;
     public bool isAirbourne = false;
     public Rigidbody2D rig;
+    public float moveSpeed = 1.0f;
+    public float jumpForce = 5.0f;
+    public AnimatorController animator;
 
     void Start()
     {
@@ -25,31 +29,32 @@ public class PlayerCharacter : MonoBehaviour
     }
     public bool DownPress()
     {
+        gameObject.GetComponent<Animator>().SetTrigger("DownPress");
         return
-            Input.GetKeyDown(KeyCode.DownArrow) ||
-            Input.GetKeyDown(KeyCode.S)
-            // || Input.GetButtonDown("Down")
-            ;
+            // Input.GetButtonDown("Down") ||
+            Input.GetKey(KeyCode.DownArrow) ||
+            Input.GetKey(KeyCode.S);
     }
     public bool LeftPress()
     {
         return
             // Input.GetButtonDown("Left") ||
-            Input.GetKeyDown(KeyCode.LeftArrow) ||
-            Input.GetKeyDown(KeyCode.A);
+            Input.GetKey(KeyCode.LeftArrow) ||
+            Input.GetKey(KeyCode.A);
     }
     public bool RightPress()
     {
         return
             // Input.GetButtonDown("Right") ||
-            Input.GetKeyDown(KeyCode.RightArrow) ||
-            Input.GetKeyDown(KeyCode.D);
+            Input.GetKey(KeyCode.RightArrow) ||
+            Input.GetKey(KeyCode.D);
     }
-    public bool Jump()
+    public bool JumpPress()
     {
         return
-            // Input.GetButtonDown("Jump") ||
-            Input.GetKeyDown(KeyCode.Space);
+            // Input.GetButton("Jump") ||
+            Input.GetKeyDown(KeyCode.Space) &&
+            !isAirbourne;
     }
     public bool PrimaryAttackPress()
     {
@@ -63,13 +68,15 @@ public class PlayerCharacter : MonoBehaviour
             // Input.GetButtonDown("Fire2") ||
             Input.GetKeyDown(KeyCode.G);
     }
+    public bool TertiaryAttackPress()
+    {
+        return
+            // Input.GetButtonDown("Fire2") ||
+            Input.GetKeyDown(KeyCode.T);
+    }
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if(Vector2.Dot(collision.GetContact(0).normal, Vector2.up) < 0.1f)
-        {
-            isAirbourne = true;
-        }
-        else
+        if(Vector2.Dot(collision.GetContact(0).normal, Vector2.up) > 0.8f)
         {
             isAirbourne = false;
         }

@@ -60,6 +60,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panda Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8192459240707817307, guid: 6bac33eafbcb04944bbf02c4bfdc7652, type: 3}
+      propertyPath: m_Size.x
+      value: 0.624032
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192459240707817307, guid: 6bac33eafbcb04944bbf02c4bfdc7652, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9331114
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192459240707817307, guid: 6bac33eafbcb04944bbf02c4bfdc7652, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0524019
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192459240707817307, guid: 6bac33eafbcb04944bbf02c4bfdc7652, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.72691214
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192459240707817307, guid: 6bac33eafbcb04944bbf02c4bfdc7652, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192459240707817307, guid: 6bac33eafbcb04944bbf02c4bfdc7652, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -85,4 +109,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f0393e2bce112d47a362ae29aca9384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  airbourne: 0
+  horizontalAxis: 0
+  verticalAxis: 0
+  isAirbourne: 0
+  rig: {fileID: 4679477384288807224}
+  moveSpeed: 5
+  jumpForce: 15
+  animator: {fileID: 9100000, guid: 051cb3d0a0a0b6849ab8c6ea1ef5c6ea, type: 2}
+--- !u!50 &4679477384288807224 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 6594745375533148273, guid: 6bac33eafbcb04944bbf02c4bfdc7652, type: 3}
+  m_PrefabInstance: {fileID: 1978745008115646793}
+  m_PrefabAsset: {fileID: 0}
