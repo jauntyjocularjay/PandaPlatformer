@@ -5,12 +5,10 @@ using UnityEngine;
 public class PlayerCharacter : MonoBehaviour
 {
     public float horizontalAxis = 0f;
-    public bool isAirbourne = false;
     public float moveSpeed = 5.0f;
     public float jumpForce = 8.0f;
     Vector2 localScale = new (1,1);
     public Rigidbody2D rig2d;
-    public AnimatorController animatorController;
     public Animator animator;
     public Transform rt;
 
