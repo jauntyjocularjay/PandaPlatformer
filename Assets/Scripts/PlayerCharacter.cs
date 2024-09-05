@@ -8,10 +8,11 @@ public class PlayerCharacter : MonoBehaviour
     public bool isAirbourne = false;
     public float moveSpeed = 5.0f;
     public float jumpForce = 8.0f;
+    Vector2 localScale = new (1,1);
     public Rigidbody2D rig2d;
     public AnimatorController animatorController;
     public Animator animator;
-    public SpriteRenderer sr;
+    public Transform rt;
 
     public void Start()
     {
@@ -21,6 +22,14 @@ public class PlayerCharacter : MonoBehaviour
     void Update()
     {
         horizontalAxis = Input.GetAxis("Horizontal");
+
+        if(MovingLeft())
+        {
+            rt.localScale = new Vector2(-localScale.x,localScale.y);
+        } else if (MovingRight())
+        {
+            rt.localScale = new Vector2(localScale.x,localScale.y);
+        }
 
         if(JumpPress() && !animator.GetBool("isAirbourne"))
         {
@@ -63,6 +72,14 @@ public class PlayerCharacter : MonoBehaviour
             // Input.GetButtonDown("Left") ||
             Input.GetKey(KeyCode.LeftArrow) ||
             Input.GetKey(KeyCode.A);
+    }
+    public bool MovingRight()
+    {
+        return horizontalAxis > 0;
+    }
+    public bool MovingLeft()
+    {
+        return horizontalAxis < 0;
     }
     public bool RightPress()
     {
