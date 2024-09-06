@@ -12,10 +12,4 @@ public class PlayerData : ScriptableObject
     public float jumpForce;
     public float gravityScale;
     public bool isAirbourne = false;
-
-    public void Movement()
-    {
-
-    }
-
 }

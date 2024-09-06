@@ -1,5 +1,4 @@
 using System;
-using UnityEditor.Animations;
 using UnityEngine;
 
 public class PlayerCharacter : MonoBehaviour
@@ -42,29 +41,26 @@ public class PlayerCharacter : MonoBehaviour
         if(PressPrimaryAttack() && !playerData.isAirbourne)
         {
             animator.SetTrigger("PrimaryAttack");
-            rig2d.AddForce(new Vector2(-rig2d.totalForce.x, -rig2d.totalForce.y), ForceMode2D.Impulse);
+            // disable left/right movement
+            // This doesn't work, no idea why. It should cancel out the force on the player's rig2d.
+            // rig2d.AddForce(new Vector2(-rig2d.totalForce.x, -rig2d.totalForce.y), ForceMode2D.Impulse);
         }
-        // else if(PressPrimaryAttack())
-        // {
-        //     animator.SetTrigger("PrimaryAttack");
-            // xAxisEnabled = false;
-        // }
+        else if(PressPrimaryAttack() && playerData.isAirbourne)
+        {
+            animator.SetTrigger("PrimaryAttack");
+            // disable left/right movement
+        }
         else if(PressSecondaryAttack() && !playerData.isAirbourne)
         {
             animator.SetTrigger("SecondaryAttack");
+            // disable left/right movement
+
         }
-        // else if(PressSecondaryAttack())
-        // {
-        //     animator.SetTrigger("SecondaryAttack");
-        // }
         else if(PressTertiaryAttack() && !playerData.isAirbourne)
         {
             animator.SetTrigger("TertiaryAttack");
+            // disable left/right movement
         }
-        // else if(PressTertiaryAttack())
-        // {
-        //     animator.SetTrigger("TertiaryAttack");
-        // }
         else if(MovingLeft())
         {
             rt.localScale = new Vector2(-localScale.x,localScale.y);
@@ -74,14 +70,10 @@ public class PlayerCharacter : MonoBehaviour
         }
         if(JumpPress() && !playerData.isAirbourne)
         {
-            animator.SetBool("isAirbourne", true);
             playerData.isAirbourne = true;
+            animator.SetBool("isAirbourne", true);
             rig2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
-        // else if(PressRight() || PressLeft())
-        // {
-
-        // }
         else if(PressRight() && !playerData.isAirbourne)
         {
             rig2d.velocity = new Vector2(horizontalAxis * moveSpeed, rig2d.velocity.y);
@@ -161,8 +153,8 @@ public class PlayerCharacter : MonoBehaviour
     {
         if(Vector2.Dot(collision.GetContact(0).normal, Vector2.up) > 0.8f)
         {
-            animator.SetBool("isAirbourne", false);
             playerData.isAirbourne = false;
+            animator.SetBool("isAirbourne", false);
         }
     }
 }
