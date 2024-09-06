@@ -26,6 +26,7 @@ public class Enemy : MonoBehaviour
 
         rig2d = gameObject.GetComponent<Rigidbody2D>();
         rig2d.gravityScale = enemyData.gravityScale;
+        rig2d.freezeRotation = true;
     }
     void Update()
     {

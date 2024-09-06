@@ -26,6 +26,7 @@ public class PlayerCharacter : MonoBehaviour
 
         rig2d = gameObject.GetComponent<Rigidbody2D>();
         rig2d.gravityScale = playerData.gravityScale;
+        rig2d.freezeRotation = true;
     }
     void Update()
     {
