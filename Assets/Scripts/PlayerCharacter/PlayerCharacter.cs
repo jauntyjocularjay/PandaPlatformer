@@ -10,16 +10,14 @@ public class PlayerCharacter : MonoBehaviour
     float horizontalAxis;
     Vector2 localScale = new (1,1);
     Vector2 FlippedScale = new(-1,1);
-    AnimatorController animatorController;
     public PlayerData playerData;
     public Rigidbody2D rig2d;
-    public Animator animator;
+    Animator animator;
     public Transform rt;
 
     public void Start()
     {
         alias = playerData.alias;
-        animatorController = playerData.animatorController;
         moveSpeed = playerData.moveSpeed;
         jumpForce = playerData.jumpForce;
         horizontalAxis = Input.GetAxis("Horizontal");
@@ -27,6 +25,9 @@ public class PlayerCharacter : MonoBehaviour
         rig2d = gameObject.GetComponent<Rigidbody2D>();
         rig2d.gravityScale = playerData.gravityScale;
         rig2d.freezeRotation = true;
+
+        animator = gameObject.GetComponent<Animator>();
+        animator.runtimeAnimatorController = playerData.animatorController;
     }
     void Update()
     {
@@ -41,10 +42,12 @@ public class PlayerCharacter : MonoBehaviour
         if(PressPrimaryAttack() && !playerData.isAirbourne)
         {
             animator.SetTrigger("PrimaryAttack");
+            rig2d.AddForce(new Vector2(-rig2d.totalForce.x, -rig2d.totalForce.y), ForceMode2D.Impulse);
         }
         // else if(PressPrimaryAttack())
         // {
         //     animator.SetTrigger("PrimaryAttack");
+            // xAxisEnabled = false;
         // }
         else if(PressSecondaryAttack() && !playerData.isAirbourne)
         {
@@ -75,7 +78,11 @@ public class PlayerCharacter : MonoBehaviour
             playerData.isAirbourne = true;
             rig2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
-        else if(RightPress() && !playerData.isAirbourne)
+        // else if(PressRight() || PressLeft())
+        // {
+
+        // }
+        else if(PressRight() && !playerData.isAirbourne)
         {
             rig2d.velocity = new Vector2(horizontalAxis * moveSpeed, rig2d.velocity.y);
         }
@@ -118,7 +125,7 @@ public class PlayerCharacter : MonoBehaviour
             Input.GetKey(KeyCode.LeftArrow) ||
             Input.GetKey(KeyCode.A);
     }
-    public bool RightPress()
+    public bool PressRight()
     {
         return
             // Input.GetButtonDown("Right") ||
