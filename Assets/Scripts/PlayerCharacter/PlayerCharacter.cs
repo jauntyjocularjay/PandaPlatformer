@@ -1,4 +1,4 @@
-using Unity.VisualScripting;
+using System;
 using UnityEditor.Animations;
 using UnityEngine;
 
@@ -37,37 +37,51 @@ public class PlayerCharacter : MonoBehaviour
     {
         horizontalAxis = Input.GetAxis("Horizontal");
 
-        if(MovingLeft())
+        
+        if(PressPrimaryAttack() && !playerData.isAirbourne)
+        {
+            animator.SetTrigger("PrimaryAttack");
+        }
+        // else if(PressPrimaryAttack())
+        // {
+        //     animator.SetTrigger("PrimaryAttack");
+        // }
+        else if(PressSecondaryAttack() && !playerData.isAirbourne)
+        {
+            animator.SetTrigger("SecondaryAttack");
+        }
+        // else if(PressSecondaryAttack())
+        // {
+        //     animator.SetTrigger("SecondaryAttack");
+        // }
+        else if(PressTertiaryAttack() && !playerData.isAirbourne)
+        {
+            animator.SetTrigger("TertiaryAttack");
+        }
+        // else if(PressTertiaryAttack())
+        // {
+        //     animator.SetTrigger("TertiaryAttack");
+        // }
+        else if(MovingLeft())
         {
             rt.localScale = new Vector2(-localScale.x,localScale.y);
         } else if (MovingRight())
         {
             rt.localScale = new Vector2(localScale.x,localScale.y);
         }
-        if(JumpPress() && !animator.GetBool("isAirbourne"))
+        if(JumpPress() && !playerData.isAirbourne)
         {
             animator.SetBool("isAirbourne", true);
+            playerData.isAirbourne = true;
             rig2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
-        else if(RightPress() && !animator.GetBool("isAirbourne"))
+        else if(RightPress() && !playerData.isAirbourne)
         {
             rig2d.velocity = new Vector2(horizontalAxis * moveSpeed, rig2d.velocity.y);
         }
-        else if(PressLeft() && !animator.GetBool("isAirbourne"))
+        else if(PressLeft() && !playerData.isAirbourne)
         {
             rig2d.velocity = new Vector2(horizontalAxis * moveSpeed, rig2d.velocity.y);
-        }
-        else if(PressPrimaryAttack())
-        {
-            animator.SetTrigger("PrimaryAttack");
-        }
-        else if(PressSecondaryAttack())
-        {
-            animator.SetTrigger("SecondaryAttack");
-        }
-        else if(PressTertiaryAttack())
-        {
-            animator.SetTrigger("TertiaryAttack");
         }
     }
     public bool MovingRight()
@@ -78,13 +92,16 @@ public class PlayerCharacter : MonoBehaviour
     {
         return horizontalAxis < 0;
     }
+    public void Stop()
+    {
+        horizontalAxis = 0;
+    }
     public bool PressUp()
     {
         return
+            // || Input.GetButtonDown("Up") ||
             Input.GetKeyDown(KeyCode.UpArrow) ||
-            Input.GetKeyDown(KeyCode.W)
-            // || Input.GetButtonDown("Up")
-            ;
+            Input.GetKeyDown(KeyCode.W);
     }
     public bool PressDown()
     {
@@ -138,6 +155,7 @@ public class PlayerCharacter : MonoBehaviour
         if(Vector2.Dot(collision.GetContact(0).normal, Vector2.up) > 0.8f)
         {
             animator.SetBool("isAirbourne", false);
+            playerData.isAirbourne = false;
         }
     }
 }
