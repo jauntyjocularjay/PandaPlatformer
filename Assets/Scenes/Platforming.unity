@@ -242,7 +242,7 @@ PrefabInstance:
       objectReference: {fileID: -937969261, guid: 39232290e64c2eb4cb5ebc2d606d2140, type: 3}
     - target: {fileID: 3302912287705896386, guid: 6bac33eafbcb04944bbf02c4bfdc7652, type: 3}
       propertyPath: m_Name
-      value: NinjaPanda
+      value: PlayerCharacter
       objectReference: {fileID: 0}
     - target: {fileID: 5041234330430671282, guid: 6bac33eafbcb04944bbf02c4bfdc7652, type: 3}
       propertyPath: m_Controller
@@ -250,7 +250,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 051cb3d0a0a0b6849ab8c6ea1ef5c6ea, type: 2}
     - target: {fileID: 6594745375533148273, guid: 6bac33eafbcb04944bbf02c4bfdc7652, type: 3}
       propertyPath: m_GravityScale
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7447432124908471697, guid: 6bac33eafbcb04944bbf02c4bfdc7652, type: 3}
       propertyPath: m_Size.x
@@ -325,12 +325,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7b3609e8661b0c4e887591a8134e834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalAxis: 0
-  isAirbourne: 0
-  moveSpeed: 4
-  jumpForce: 8
+  animatorController: {fileID: 0}
+  playerData: {fileID: 11400000, guid: 81801f0aab09ac44e99e5c3dbf50ad3f, type: 2}
   rig2d: {fileID: 172729683}
-  animatorController: {fileID: 9100000, guid: 051cb3d0a0a0b6849ab8c6ea1ef5c6ea, type: 2}
   animator: {fileID: 172729687}
   rt: {fileID: 172729686}
 --- !u!4 &172729686 stripped

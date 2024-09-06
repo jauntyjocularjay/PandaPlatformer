@@ -4,19 +4,29 @@ using UnityEngine;
 
 public class PlayerCharacter : MonoBehaviour
 {
-    public float horizontalAxis = 0f;
-    public float moveSpeed = 5.0f;
-    public float jumpForce = 8.0f;
+    string alias;
+    float moveSpeed;
+    float jumpForce;
+    float horizontalAxis;
     Vector2 localScale = new (1,1);
+    Vector2 FlippedScale = new(-1,1);
+    public AnimatorController animatorController;
+    public PlayerData playerData;
     public Rigidbody2D rig2d;
     public Animator animator;
     public Transform rt;
 
     public void Start()
     {
-        GetRigidBody();
-    }
+        alias = playerData.alias;
+        animatorController = playerData.animatorController;
+        moveSpeed = playerData.moveSpeed;
+        jumpForce = playerData.jumpForce;
+        horizontalAxis = Input.GetAxis("Horizontal");
 
+        rig2d = gameObject.GetComponent<Rigidbody2D>();
+        rig2d.gravityScale = playerData.gravityScale;
+    }
     void Update()
     {
         horizontalAxis = Input.GetAxis("Horizontal");
@@ -43,10 +53,6 @@ public class PlayerCharacter : MonoBehaviour
             rig2d.velocity = new Vector2(horizontalAxis * moveSpeed, rig2d.velocity.y);
         }
 
-    }
-    public void GetRigidBody()
-    {
-        rig2d = gameObject.GetComponent<Rigidbody2D>();
     }
     public bool Up()
     {
