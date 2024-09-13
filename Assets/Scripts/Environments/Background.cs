@@ -8,7 +8,6 @@ public class Background : MonoBehaviour
     FractionScale scrollProgress = new(0,512);
     void Start()
     {
-        // backgrounds = gameObject.GetComponentsInChildren<RectTransform>();
     }
 
     void FixedUpdate()
@@ -33,8 +32,6 @@ public class Background : MonoBehaviour
             {
                 scrollProgress.Increment(1);
             }
-            Debug.Log($"{backgrounds[i].position.ToString()}");
-            Debug.Log(scrollProgress.ToString());
         }
 
 
