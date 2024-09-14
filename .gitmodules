@@ -1,3 +1,6 @@
 [submodule "git"]
 	path = git
 	url = http://github.com/jauntyjocularjay/kwikgit.git
+[submodule "Assets/Scripts/Modules/FractionScale"]
+	path = Assets/Scripts/Modules/FractionScale
+	url = http://github.com/jauntyjocularjay/fractionscale.git

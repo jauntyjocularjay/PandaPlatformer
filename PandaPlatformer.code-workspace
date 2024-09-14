@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "Assets/Scripts/Modules"
+		},
+		{
+			"path": "Assets/Scripts"
+		}
+	],
+	"settings": {
+		"dotnet.defaultSolution": "PandaPlatformer.sln"
+	}
+}
