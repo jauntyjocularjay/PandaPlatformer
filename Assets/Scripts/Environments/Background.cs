@@ -1,98 +1,64 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEditor;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Background : MonoBehaviour
 {
-    List<RectTransform>[] backgroundRects;
-    public GameObject[] backgroundObject;
-    FractionScale scrollProgress = new(0,128);
+    public GameObject[] backgroundObjects;
+    // public SpriteRenderer spriteRenderers;
+    readonly FractionScale scrollProgress = new(0,128);
     public bool scrollLeft = true;
-    public float deltaX;
-    // deltaX Background A: 30.42
-    // deltaX Background A: 32
+    float direction;
     Camera cam;
     float camHeight;
     float camWidth;
+    float cameraFieldOfViewCosine;
+
+
 
     void Start()
     {
+        direction = scrollLeft ? -1 : 1;
+
         cam = Camera.main;
         camHeight = 2f * cam.orthographicSize;
         camWidth = camHeight * cam.aspect;
-
+        cameraFieldOfViewCosine = -math.cos(cam.fieldOfView);
     }
 
     void FixedUpdate()
     {
-        ScrollB();
+        Scroll();
     }
-    void ScrollA()
-    {
-        // for(int i = 0; i < backgroundRects.Length; i++)
-        // {
-        //     backgroundRects[i].position = 
-        //         new Vector2(
-        //             scrollProgress.ToFloat() * -32,
-        //             backgroundRects[i].position.y
-        //         );
-            
-        //     if(scrollProgress.Full())
-        //     {
-        //         scrollProgress.SetNumerator(0);
-        //         backgroundRects[i].position = 
-        //             new Vector2(
-        //                 0,
-        //                 backgroundRects[i].position.y
-        //             );
-        //     }
-        //     else 
-        //     {
-        //         scrollProgress.Increment(1);
-        //     }
-        // }
-    }
-    void ScrollB()
-    {
-        Vector2 newPosition;
-        Vector2 currentPosition;
-        float spriteWidth = 0f;
-        float direction = scrollLeft ? -1 : 1;
 
-        for(int i = 0; i < backgroundObject.Length; i++)
+    void Scroll()
+    {
+        foreach (GameObject background in backgroundObjects)
         {
-            currentPosition = backgroundObject[i].GetComponent<RectTransform>().position;
-            SpriteRenderer[] renderers = backgroundObject[i].GetComponentsInChildren<SpriteRenderer>();
+            RectTransform rect = background.GetComponent<RectTransform>();
+            rect.position = new Vector2(
+                direction * camWidth * cameraFieldOfViewCosine * scrollProgress.ToFloat(),
+                0f
+            );
 
-            for(int j = 0; j < renderers.Length; j++)
+            if(!scrollProgress.Full())
             {
-                spriteWidth += renderers[j].size.x;
+                scrollProgress.Increment();
             }
-
-            newPosition = new Vector2(
-                direction * deltaX * scrollProgress.ToFloat(),
-                0f 
-            );
-
-            Debug.Log(
-                $"direction: {direction} \n" +
-                $"scrollProgress.ToFloat(): {scrollProgress} \n"
-            );
-            // Debug.Log($"scrollProgress: {scrollProgress}");
-            // Debug.Log($"scrollProgress: {scrollProgress}");
-            // Debug.Log($"scrollProgress: {scrollProgress}");
-            // Debug.Log($"scrollProgress: {scrollProgress}");
-            // Debug.Log($"scrollProgress: {scrollProgress}");
-            backgroundObject[i].GetComponent<RectTransform>().position = newPosition;
+            else
+            {
+                rect.position = new Vector2(0,0);
+                scrollProgress.SetNumerator(0);
+            }
         }
 
-        if(scrollProgress.Full())
-            scrollProgress.SetNumerator(0);
-        else
-            scrollProgress.Increment();
 
+
+        
     }
 
 }
