@@ -9,8 +9,7 @@ using UnityEngine;
 public class BackgroundData : ScriptableObject
 {
     public string alias;
-    public FractionScale scrollProgress = new(0,512); 
-
+    public Sprite[] sprites;
 
 
 }

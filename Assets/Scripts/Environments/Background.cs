@@ -8,14 +8,15 @@ using UnityEngine.SceneManagement;
 
 public class Background : MonoBehaviour
 {
-    // GameObject[] gameObjects;
+    public GameObject[] gameObjects;
+    public BackgroundData[] backgroundData;
     RectTransform[] rectTransforms;
     readonly FractionScale scrollProgress = new(0,512);
     public bool scrollLeft = true;
     float direction;
     Camera cam;
     float camHeight;
-    float camWidth;
+    float cameraWidth;
     float cameraFieldOfViewCosine;
 
     void Start()
@@ -24,22 +25,23 @@ public class Background : MonoBehaviour
 
         cam = Camera.main;
         camHeight = 2f * cam.orthographicSize;
-        camWidth = camHeight * cam.aspect;
+        cameraWidth = camHeight * cam.aspect;
         cameraFieldOfViewCosine = -math.cos(cam.fieldOfView);
         rectTransforms = gameObject.GetComponentsInChildren<RectTransform>();
     }
 
     void FixedUpdate()
     {
-        Scroll();
+        ScrollB();
     }
 
     void Scroll()
     {
+        
         foreach (RectTransform rect in rectTransforms)
         {
             rect.position = new Vector2(
-                direction * camWidth * cameraFieldOfViewCosine * scrollProgress.ToFloat(),
+                direction * cameraWidth * cameraFieldOfViewCosine * scrollProgress.ToFloat(),
                 0f
             );
 
@@ -57,6 +59,24 @@ public class Background : MonoBehaviour
 
 
         
+    }
+
+    void ScrollB()
+    {
+        float spriteWidths = 0f;
+        float rotation = 0f;
+        SpriteRenderer[] spriteRenderers;
+
+        for(int i = 0; i < gameObjects.Length; i++)
+        {
+            foreach(Sprite sprite in backgroundData[i].sprites)
+            {
+                rotation += sprite.bounds.size.x;
+            }
+
+            
+        }
+
     }
 
 }
