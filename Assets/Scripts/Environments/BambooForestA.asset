@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d6515c965db146ea8c60b0a80f6e6c4, type: 3}
   m_Name: BambooForestA
   m_EditorClassIdentifier: 
-  alias: BombooForestA
-  sprites:
-  - {fileID: 21300000, guid: 3bfef58569c18634687e851a6c31506d, type: 3}
+  alias: 
+  spriteRenderers:
+  - {fileID: 0}
