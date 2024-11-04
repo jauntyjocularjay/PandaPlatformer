@@ -1,56 +1,47 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.Mathematics;
-using UnityEditor;
-using UnityEditor.Experimental.GraphView;
-using UnityEditor.U2D;
+﻿using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.Rendering;
-using UnityEngine.SceneManagement;
 
 public class Background : MonoBehaviour
 {
-    public GameObject[] gameObjects;
-    public SpriteRenderer[] backgroundSegmentA;
-    public SpriteRenderer[] backgroundSegmentB;
-    List<SpriteRenderer[]> backgroundSegment;
-    SpriteRenderer[] spriteRenderers;
-    RectTransform[] rectTransforms;
-    RectTransform rect;
-    readonly FractionScale scrollProgress = new FractionScale(0,512);
+    public Segment[] segmentData;
+    public SpriteRenderer[] backgroundSegmentRenderer;
+    public RectTransform[] rectTransform;
+    public int increments;
+    UFractionScale scrollProgress;
     public bool scrollLeft = true;
-    float direction;
+    private float direction;
     Camera cam;
-    float camHeight;
-    float cameraWidth;
-    float cameraFieldOfViewCosine;
-    float spriteWidths = 0f;
-    float viewOfFieldWidth;
+    float widthOfView;
 
     void Start()
     {
-        direction = scrollLeft ? -1 : 1;
+        scrollProgress = new UFractionScale(0, increments);
+
+        direction = scrollLeft ? -1.0f : 1.0f;
+
+        rectTransform = gameObject.GetComponentsInChildren<RectTransform>();
         
-        backgroundSegment.Add(backgroundSegmentA);
-        backgroundSegment.Add(backgroundSegmentB);
+        widthOfView = WidthOfView();
+    }
 
+    float WidthOfView()
+    {
         cam = Camera.main;
-        camHeight = 2f * cam.orthographicSize;
-        cameraWidth = camHeight * cam.aspect;
-        rectTransforms = gameObject.GetComponentsInChildren<RectTransform>();
-        viewOfFieldWidth = cameraWidth * cameraFieldOfViewCosine;
-
-        cameraFieldOfViewCosine = -math.cos(cam.fieldOfView);
+        float camHeight = 2.0f * cam.orthographicSize;
+        float cameraWidth = camHeight * cam.aspect;
+        float cameraFieldOfViewCosine = -math.cos(cam.fieldOfView);
+        return cameraWidth * cameraFieldOfViewCosine;
     }
 
     void FixedUpdate()
     {
-        ScrollC();
+
     }
 
     static float CalculateSegment(SpriteRenderer[] renderers)
     {
+        // Get the segment width
+
         float segmentWidth = 0f;
         
         foreach(SpriteRenderer renderer in renderers)
@@ -77,52 +68,17 @@ public class Background : MonoBehaviour
     void Scroll()
     {
         
-        foreach (RectTransform rect in rectTransforms)
+        foreach (RectTransform rect in rectTransform)
         {
             rect.position = new Vector2(
-                direction * cameraWidth * cameraFieldOfViewCosine * scrollProgress.ToFloat(),
+                direction * widthOfView * scrollProgress.ToFloat(),
                 0f
             );
         }        
     }
 
-    void ScrollC()
+    void ScrollA()
 	{
-		int i = 0;
-        foreach(GameObject gameObj in gameObjects)
-        {
-            spriteRenderers = gameObj.GetComponentsInChildren<SpriteRenderer>();
-            rect = gameObj.GetComponent<RectTransform>();
-
-            foreach(SpriteRenderer renderer in spriteRenderers)
-            {
-                spriteWidths += renderer.sprite.texture.width;
-            }
-
-	        float scrollWidth =  0f;
-            
-	        float rotation = scrollWidth >= cameraWidth
-	        	? scrollWidth - (scrollWidth % cameraWidth)
-	        	: cameraWidth - (cameraWidth % scrollWidth);
-
-	        if(scrollWidth > cameraWidth){
-                rect.position = new Vector2(
-                    direction * cameraWidth * scrollProgress.ToFloat(),
-                    0
-                );
-            }
-            else
-            {
-                
-            }
-            
-            
-            
-            
-            IncrementOrReset(rect);
-
-            spriteWidths = 0f;
-        }
     }
 }
 
