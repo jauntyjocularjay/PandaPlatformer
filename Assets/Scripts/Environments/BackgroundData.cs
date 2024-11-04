@@ -10,9 +10,8 @@ public class Segment : ScriptableObject
 {
     public float width = 0.0f;
     public Sprite[] sprite;
-    
-    
-
 }
+
+
 
 

@@ -3,9 +3,8 @@ using UnityEngine;
 
 public class Background : MonoBehaviour
 {
-    public Segment[] segmentData;
-    public SpriteRenderer[] backgroundSegmentRenderer;
-    public RectTransform[] rectTransform;
+    public BGLayer[] layers;
+    public RectTransform[] rectTransforms;
     public int increments;
     UFractionScale scrollProgress;
     public bool scrollLeft = true;
@@ -16,11 +15,8 @@ public class Background : MonoBehaviour
     void Start()
     {
         scrollProgress = new UFractionScale(0, increments);
-
         direction = scrollLeft ? -1.0f : 1.0f;
-
-        rectTransform = gameObject.GetComponentsInChildren<RectTransform>();
-        
+        rectTransforms = gameObject.GetComponentsInChildren<RectTransform>();
         widthOfView = WidthOfView();
     }
 
@@ -36,20 +32,6 @@ public class Background : MonoBehaviour
     void FixedUpdate()
     {
 
-    }
-
-    static float CalculateSegment(SpriteRenderer[] renderers)
-    {
-        // Get the segment width
-
-        float segmentWidth = 0f;
-        
-        foreach(SpriteRenderer renderer in renderers)
-        {
-            segmentWidth += renderer.size.x;
-        }
-        
-        return segmentWidth;
     }
 
     void IncrementOrReset(RectTransform rect)
@@ -68,9 +50,9 @@ public class Background : MonoBehaviour
     void Scroll()
     {
         
-        foreach (RectTransform rect in rectTransform)
+        foreach (RectTransform rectTransform in rectTransforms)
         {
-            rect.position = new Vector2(
+            rectTransform.position = new Vector2(
                 direction * widthOfView * scrollProgress.ToFloat(),
                 0f
             );

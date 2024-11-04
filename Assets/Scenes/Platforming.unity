@@ -3066,6 +3066,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1447763050}
+  - component: {fileID: 1447763051}
   m_Layer: 0
   m_Name: LayerA
   m_TagString: Untagged
@@ -3093,6 +3094,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1447763051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447763049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc771475304626f409df9a85964e96b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileMode: 0
+  layerWidth: 80
 --- !u!224 &895188463787316411
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3241,6 +3256,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 895188463787316411}
+  - component: {fileID: 5313725339885293935}
   m_Layer: 0
   m_Name: LayerB
   m_TagString: Untagged
@@ -3248,6 +3264,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5313725339885293935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5313725339885293934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc771475304626f409df9a85964e96b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileMode: 0
+  layerWidth: 0
 --- !u!1 &6950351238413894205
 GameObject:
   m_ObjectHideFlags: 0
@@ -3361,15 +3391,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eaa078c521b247019fdfaa61456265a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  segmentData:
-  - {fileID: 11400000, guid: f26de4af8f5471f438d4e5cedb12c328, type: 2}
-  - {fileID: 11400000, guid: 5a89354648ac19a4897bf01bd3089f84, type: 2}
-  backgroundSegmentRenderer:
-  - {fileID: 0}
-  - {fileID: 0}
-  rectTransform:
-  - {fileID: 0}
-  - {fileID: 0}
+  layers:
+  - {fileID: 1447763049}
+  - {fileID: 5313725339885293934}
+  rectTransforms: []
   increments: 512
   scrollLeft: 1
 --- !u!4 &8873718988613748495
